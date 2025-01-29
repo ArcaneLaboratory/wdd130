@@ -1,7 +1,12 @@
 body{
     background-color: lightskyblue;
-    width: 600;
     font-family: 'Courier New', Courier, monospace;
+}
+header{
+    border-bottom: 4px solid darkblue;
+}
+nav{
+    margin: 8px;
 }
 p{
     font-size: 24px;

@@ -1,0 +1,37 @@
+body{
+    background-color: #56A0D4;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+h1:hover{
+    color: black;
+}
+ol{
+    text-align: left;
+    font-weight: bold;
+}
+li{
+    padding: 5px;
+}
+blockquote{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+#attribution{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#q2{
+    margin: 0 auto;
+    font-size: 40px;
+    max-width: 350px;
+    padding: 10px;
+}
