@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: steelblue;
+    padding: 25px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 25px;
+}
+nav a:hover{
+    color: steelblue;
+    background-color: white;
+}
+footer{
+    background-color: steelblue;
+    color: white;
+}
+footer p{
+    padding: 25px;
+}
+h1{
+    margin: 50px 0;
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 8px solid steelblue;
+}
