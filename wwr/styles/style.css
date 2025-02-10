@@ -35,6 +35,7 @@ body{
 nav{
     text-align: center;
     font-size: 1.1em;
+    background-color: var(--nav-background-color);
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -55,9 +56,6 @@ main section img{
 header{
     background-color: var(--paragraph-background-color);
 }
-nav{
-    background-color: var(--nav-background-color);
-}
 nav a{
     color: var(--nav-link-color);
     text-decoration: none;
@@ -71,7 +69,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 .book, .join{
-    background-color: white;
+    background-color: var(--nav-background-color);
     color: currentColor;
     text-decoration: none;
     font-size: 16px;
