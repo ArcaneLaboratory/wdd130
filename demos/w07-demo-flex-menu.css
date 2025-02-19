@@ -1,0 +1,29 @@
+*{
+    margin: 0
+}
+header{
+    background-color: violet;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0.8em;
+    display: inline-block
+}
+a:hover{
+    background-color: white;
+    color: violet
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+#flex-container{
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+#flex-container > section{
+    flex: 200px;
+    border: 1px solid black;
+}
