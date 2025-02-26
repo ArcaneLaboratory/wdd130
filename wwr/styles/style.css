@@ -145,7 +145,7 @@ h2{
     align-self: center;
 }
 .home-grid section{
-    margin: 200px 0;
+    margin: 200px auto;
 }
 .card-img{
     border: 10px solid black;
