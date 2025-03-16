@@ -106,7 +106,7 @@ footer{
     color: var(--paragraph-color-on-color);
     font-size: 1.2em;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -198,6 +198,9 @@ h2{
 .rapids-card{
     grid-column: 8/10;
     grid-row: 2/3;
+}
+.faq-questions{
+ text-align: left;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
