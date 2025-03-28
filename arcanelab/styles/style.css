@@ -1,0 +1,379 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url(
+  'https://fonts.googleapis.com/css2?family=Iceland&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Unica+One&display=swap'
+  );
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #1b1c2d   ;
+  --secondary-color: #00EEF9 ;
+  --accent1-color: #DE0D92;
+  --accent2-color: #4D6CFA;
+  --accent-other-color: #9E1946;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Unica One";
+  --paragraph-font: "Roboto Mono", "Courier New", Courier, monospace;
+  --nav-font: "Iceland";
+
+  --headline-color-on-main: var(--secondary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-main: var(--secondary-color);
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: var(--accent2-color)  ;
+  --nav-link-color: white;
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-background-color: var(--primary-color);
+
+  --main-background-color: var(--primary-color)
+}
+
+body {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 4em; */
+  font-size: 18px;
+  text-align: center;
+  /* background-color: var(--main-background-color); */
+  font-family: var(--paragraph-font);
+  box-sizing: border-box;
+}
+#mainpage{
+    background-image: url("../images/home-background_2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px) saturate(300%);
+    -webkit-backdrop-filter: blur(2px) saturate(300%);
+}
+/* .background-blur{
+    background-image: url("home-background_2.jpg");
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 10vh 0; 
+    filter: blur(3px) saturate(500%);
+    -webkit-filter: blur(3px) saturate(500%);
+    position: absolute;
+    z-index: -1000;
+} */
+footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    background-color: var(--accent1-color);
+    align-items: center;
+    justify-content: space-around;
+}
+img {
+  display: inline;
+  margin: 6px auto;
+  border: 3px solid var(--accent1-color);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-main);
+}
+h2 {
+  text-align: center;
+}
+h1{
+    font-size: 3.5em;
+}
+h4{
+    font-size: 1.6em;
+    color: var(--accent1-color);
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+  border: 0px;
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+a{
+    text-decoration: none;
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-main);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  border: 3px solid var(--accent2-color);
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+.accent-other{
+  background-color: var(--accent-other-color)
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--nav-font);
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+nav a {
+  min-width: 120px;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+nav img{
+    display: inline;
+    margin: 6px auto;
+    border: none;
+}
+nav *{
+    max-height: 70px;
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-aboutme {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-updates {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+#heading-font-descriptor{
+  font-family: var(--heading-font);
+}
+#nav-font-descriptor{
+  font-family: var(--nav-font);
+}
+#paragraph-font-descriptor{
+  font-family: var(--paragraph-font);
+}
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    /* border: 3px solid var(--accent1-color); */
+}
+#hero *{
+    width: 100%;
+    margin: 5% auto;
+}
+#nav-logo{
+    max-width: 50px;
+}
+
+#hero-msg{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border: 3px solid var(--accent1-color);
+    margin: 20px auto;
+    background-color: var(--main-background-color);
+    align-items: center;
+    align-content: center;
+}
+#hero-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border: 3px solid var(--secondary-color);
+    padding: 0px;
+}
+#main-grid div.button-box{
+    text-align: center;
+    margin: 5% auto 10% auto;
+}
+.projects, .contact, .read-more{
+    background-color: var(--nav-background-color);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 8px;
+    /* border: 2px solid var(--accent1-color); */
+    color: #FFFFFF;
+}
+#main-grid .read-more, #main-grid .update-2 .button-box .read-more{
+    background-color: var(--accent-other-color);
+}
+#main-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+}
+#main-grid > section{
+    margin: 15% auto;
+}
+#main-grid *{
+    width: 100%;
+    margin: 5% auto;
+    box-sizing: border-box;
+    background-color: var(--accent2-color);
+}
+.update-1{
+    grid-column: 2/3;
+    border: 3px solid var(--accent1-color)
+}
+.update-2{
+    grid-column: 4/5;
+    border: 3px solid var(--secondary-color);
+}
+#main-grid .update-2, #main-grid .update-2 *{
+    background-color: var(--primary-color);
+}
+#main-grid p{
+    color: #FFFFFF;
+}
+.update-3{
+    grid-column: 6/7;
+    border: 3px solid var(--accent1-color)
+}
+#main-grid img.update-image{
+    border: none;
+    margin: 0 auto;
+    max-height: 42vh;
+    object-fit: contain;
+    background-color: var(--main-background-color);
+}
+#main-grid p{
+    margin: 0 auto;
+    border: none;
+}
+.social img{
+    width: 24px;
+}
+.links a{
+    padding: 1%;
+}
+
+/* Toaster */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
