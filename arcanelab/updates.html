@@ -7,24 +7,20 @@
     <link rel="icon" href="images/logo-simple-transparent.png">
     <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body id="update-page">
     <header>
-        <nav>
+        <nav id="header-grid">
             <a href="index.html">
-                <img src="/arcanelab/images/logo-simple.png" alt="Arcane Laboratory Logo">
+                <img src="images/logo-simple-transparent.png" alt="Arcane Laboratory Logo" id="nav-logo">
             </a>
-            <a href="index.html"> Home </a>
             <a href="about-me.html"> About Me</a>
             <a href="updates.html"> Updates </a>
             <a href="mailto:arcane.laboratory.mtg@gmail.com"> Contact Me </a>
         </nav>
     </header>
     <main>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="" alt="Main image">
-            </div>
-            <section id="hero-msg">
+        <div id="update-header">
+            <section id="update-msg">
                 <h1 class="home-title">Arcane Laboratory</h1>
                 <h4>Lorem ipsum dolor sit amet</h4>
                 <div class="button-box">
@@ -34,29 +30,45 @@
             </section>
         </div>
         <div id="main-grid">
-            <section class="project-1">
-                <img class="project-image" src="images/placeholder.jpg" alt="first project image">
-                <p>lorem ipsum dolor sit amet</p>
-                <a>Read More</a>
+            <section class="update-1">
+                <img class="update-image" src="images/logo-simple-celebration.png" alt="first update image">
+                <h3>Website Homepage Complete</h3>
+                <p>The homepage of my website is up and running! It took longer than I was hoping, but I'm happy with the results.</p>
+                <div class="button-box">
+                    <a class="read-more" onclick="showToaster('You\'re already on the website!')">Read More</a>
+                </div>
             </section>
-            <section class="project-2">
-                <img class="project-image" src="images/placeholder.jpg" alt="second project image">
-                <p>lorem ipsum dolor sit amet</p>
-                <a>Read More</a>
+            <section class="update-2">
+                <img class="update-image" src="images/logo-simple-music.png" alt="second update image">
+                <h3>I made a song</h3>
+                <p>This is a song I put together as a project for one of my college classes. I might use it in a game in the future. Click below to give it a listen! </p>
+                <div class="button-box">
+                    <a class="read-more" href="https://drive.google.com/file/d/16W5JikzdeGMMKNdY_KCAdIXkcqqmdk9W/view?usp=drive_link">Read More</a>
+                </div>
+            </section>
+            <section class="update-3">
+                <img class="update-image" src="images/placeholder.jpg" alt="third update image">
+                <h3> Coming Soon</h3>
+                <p>Stay tuned for more project updates!</p>
+                <div class="button-box">
+                    <a class="read-more" onclick="showToaster('This content is not yet available.')">Read More</a>
+                </div>
             </section>
         </div>
     </main>
     <footer>
-        <p><a href="index.html"> Home </a></p>
-        <p><a href="about-me.html"> About Me</a></p>
-        <p><a href="updates.html"> Updates </a></p>
-        <p><a href="site-plan.html"> Site Plan </a></p>
+        <div class="links">
+            <a href="index.html"> Home </a>
+            <a href="about-me.html"> About Me</a>
+            <a href="updates.html"> Updates </a>
+            <a href="site-plan.html"> Site Plan </a>
+        </div>
         <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+            <a href="https://github.com" target="_blank">
+                <img src="images/github.png" alt="github icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
+            <a href="https://discord.com" target="_blank">
+                <img src="images/discord.png" alt="discord icon">
             </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
@@ -64,5 +76,6 @@
         </div>
         <p>Arcane Laboratory &copy; 2025 - Joseph Mackelprang</p>
     </footer>
+    <script src="toaster.js"></script>
 </body>
 </html>
