@@ -10,7 +10,7 @@ Fonts are separated by a | */
   --primary-color: #1b1c2d   ;
   --secondary-color: #00EEF9 ;
   --accent1-color: #DE0D92;
-  --accent2-color: #4D6CFA;
+  --accent2-color: #3254ef;
   --accent-other-color: #9E1946;
 
   /* change the values below to your chosen font(s) */
@@ -91,8 +91,8 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-footer a{
-      color: var(--secondary-color);
+footer a, footer p{
+  color: #fff;
 }
 img {
   display: inline;
@@ -173,7 +173,7 @@ p.colored {
 }
 
 nav {
-  background-color: #3254ef;
+  background-color: var(--accent2-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
