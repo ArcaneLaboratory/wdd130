@@ -91,6 +91,9 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+footer a{
+      color: var(--secondary-color);
+}
 img {
   display: inline;
   margin: 6px auto;
@@ -170,7 +173,7 @@ p.colored {
 }
 
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #3254ef;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
